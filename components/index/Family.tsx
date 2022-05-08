@@ -39,7 +39,12 @@ const Family: React.FC<Props> = ({}) => {
           Families celebrate each other's successes. Consider joining our
           family.
         </SectText>
-        <Button href="/apply" className="mt-10">
+        <Button
+          href="/apply"
+          className="mt-10 w-4/5 mx-auto flex justify-center"
+          filled
+          plus
+        >
           Apply Now
         </Button>
       </div>

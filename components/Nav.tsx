@@ -37,7 +37,9 @@ const Nav: React.FC<Props> = ({}) => {
           </li>
         </ul>
         <div className="flex-grow-[1] flex flex-col justify-end">
-          <Button href="/apply">Get a Quote</Button>
+          <Button href="/apply" filled plus>
+            Get a Quote
+          </Button>
         </div>
       </div>
       <div
