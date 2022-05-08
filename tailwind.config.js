@@ -19,6 +19,12 @@ module.exports = {
       fontSize: {
         logo: "1.375rem",
         link: "0.875rem",
+        "sect2-heading": "1.375rem",
+        md: "1.125rem",
+        lg: "2.5rem",
+      },
+      gap: {
+        sect: "7.5rem",
       },
     },
   },
