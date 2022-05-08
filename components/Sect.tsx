@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Sect: React.FC<Props> = ({ children }) => {
-  return <section className="px-[5%] py-2">{children}</section>;
+  return <section className="px-[5vw] py-2">{children}</section>;
 };
 
 export default Sect;
