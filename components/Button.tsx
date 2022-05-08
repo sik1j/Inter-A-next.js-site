@@ -5,6 +5,7 @@ interface Props {
   children: React.ReactNode;
   href: string;
   filled?: true | undefined;
+  className?: string;
 }
 
 const Button: React.FC<Props> = ({ children, href, filled }) => {
@@ -12,8 +13,8 @@ const Button: React.FC<Props> = ({ children, href, filled }) => {
     <Link href={href}>
       <a
         className={
-          `` +
-          " text-link font-semibold text-white bg-secondary py-4 px-6 rounded-md"
+          `${filled ? "bg-secondary text-white" : "bg-white text-secondary"}` +
+          " text-link font-semibold py-4 px-6 rounded-md border-2 border-secondary"
         }
       >
         {children}
