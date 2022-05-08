@@ -11,12 +11,12 @@ const Nav: React.FC<Props> = ({}) => {
 
   const currPath = router.pathname;
   return (
-    <div className=" flex justify-between overflow-x-hidden px-[5%] py-2">
+    <div className=" flex justify-between overflow-x-hidden px-[5%] py-2 ">
       <div className="text-primary">DigitUX</div>
       <div
         className={
-          `${isNavOn ? " " : "translate-y-[100vh]"}` +
-          " transition-transform absolute inset-0  flex flex-col items-center justify-between py-12"
+          `${isNavOn ? " " : "-translate-y-[100vh]"}` +
+          " transition-transform absolute inset-0  flex flex-col items-center justify-between py-12 bg-white bg-opacity-70 backdrop-blur-sm"
         }
       >
         <ul className="flex-grow-[1] flex flex-col justify-between">
