@@ -11,7 +11,7 @@ const Card: React.FC<Props> = ({ title, info }) => {
     <div className="flex flex-col justify-between space-y-3">
       <div className="font-bold text-sect2-heading text-primary">{title}</div>
       <div className="text-text-grey">{info}</div>
-      <Button href="/" className="w-3/5" chevron>
+      <Button href="/" className="w-2/5">
         Learn More
       </Button>
     </div>
