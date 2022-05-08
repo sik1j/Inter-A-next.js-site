@@ -1,22 +1,59 @@
 import React from "react";
 import Link from "next/link";
+import { ChevronRightIcon } from "@heroicons/react/solid";
+import { PlusIcon } from "@heroicons/react/solid";
 
 interface Props {
   children: React.ReactNode;
   href: string;
   filled?: true | undefined;
+  chevron?: true | undefined;
+  plus?: true | undefined;
+  className?: string;
 }
 
-const Button: React.FC<Props> = ({ children, href, filled }) => {
+const Button: React.FC<Props> = ({
+  children,
+  href,
+  filled,
+  chevron,
+  plus,
+  className,
+}) => {
+  const createIcon = () => {
+    const iconClass = "w-6 h-6";
+    if (chevron) {
+      return (
+        <ChevronRightIcon
+          className={
+            iconClass + " group-hover:translate-x-3 transition-transform"
+          }
+        />
+      );
+    } else if (plus) {
+      return (
+        <PlusIcon
+          className={
+            iconClass +
+            " ml-4 group-hover:rotate-180 group-hover:scale-110 transition-transform"
+          }
+        />
+      );
+    }
+  };
   return (
     <Link href={href}>
       <a
         className={
-          `` +
-          " text-link font-semibold text-white bg-secondary py-4 px-6 rounded-md"
+          `${filled ? "bg-secondary text-white" : "bg-white text-secondary"}` +
+          " text-link font-semibold py-4 px-6 rounded-md border-2 border-secondary group " +
+          className
         }
       >
-        {children}
+        <div className="flex items-center">
+          {children}
+          <span>{createIcon()}</span>
+        </div>
       </a>
     </Link>
   );
