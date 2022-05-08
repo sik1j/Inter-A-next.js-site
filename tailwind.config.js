@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#3B71FE",
-        secondary: "#29B37E",
+        secondary: "#AD45F7",
         "text-grey": "#6E6E80",
         "text-gray": "#6E6E80",
         "text-dark": "#0E0E2C",
@@ -18,7 +18,7 @@ module.exports = {
       },
       fontSize: {
         logo: "1.375rem",
-        nav: "0.875rem",
+        link: "0.875rem",
       },
     },
   },
