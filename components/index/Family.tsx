@@ -24,7 +24,7 @@ const Family: React.FC<Props> = ({}) => {
           but you do learn to treat each other with respect and to work together
           for a common goal.
         </SectText>
-        <div>
+        <div className="mx-auto">
           <DiversitySVG />
         </div>
         <SectText>
