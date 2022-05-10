@@ -19,20 +19,20 @@ const ImgCard: React.FC<Props> = ({
   setPrevImage,
 }) => {
   return (
-    <div className="">
-      <div className="">
+    <div className=" relative">
+      <div className="flex justify-center -z-10">
         <Image src={imageUrl} height={350} width={350} objectFit="cover" />
       </div>
-      <div className="space-y-3">
+      <div className="space-y-3 flex flex-col items-center mt-3">
         <div className="font-bold text-md ">{name}</div>
         <div className="text-text-gray ">{experience + " of experience"}</div>
-        <div className="flex gap-14 justify-center ">
+        <div className="flex gap-14 justify-center pt-6">
           <ArrowCircleLeftIcon
-            className="w-14 text-primary stroke-1"
+            className="w-16 text-primary stroke-1"
             onClick={() => setPrevImage()}
           />
           <ArrowCircleRightIcon
-            className="w-14 text-primary stroke-1"
+            className="w-16 text-primary stroke-1"
             onClick={() => setNextImage()}
           />
         </div>
