@@ -32,7 +32,7 @@ const Difference: React.FC<Props> = ({}) => {
     <Sect>
       <SectHeading>What Makes Us Different</SectHeading>
       <div className="space-y-11">
-        <SectHeading2 className={"text-base"}>
+        <SectHeading2>
           We offer a variaty of different programs created to help enhance
           learning and success
         </SectHeading2>
