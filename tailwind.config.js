@@ -11,13 +11,16 @@ module.exports = {
         "text-grey": "#6E6E80",
         "text-gray": "#6E6E80",
         "text-dark": "#0E0E2C",
+        "bg-grey": "#F6F6F7",
         "bg-dark": "#262A31",
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
       fontSize: {
-        logo: "1.375rem",
+        "logo-nav": "1.5rem",
+        "logo-ftr": "2rem",
+        ftr: "0.875rem",
         link: "0.875rem",
         "sect2-heading": "1.375rem",
         md: "1.125rem",
