@@ -18,7 +18,7 @@ const Hero: React.FC<Props> = ({}) => {
         to use product
       </SectText>
       <div className="flex flex-col mt-6">
-        <Button href="/apply" className="text-center" filled plus>
+        <Button href="/apply" className="flex justify-center" filled plus>
           Let's Talk
         </Button>
         <Link href={"/"}>
