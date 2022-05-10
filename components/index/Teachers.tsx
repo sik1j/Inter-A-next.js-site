@@ -44,7 +44,7 @@ const Teachers: React.FC<Props> = ({}) => {
       // imageNum: 2,
     },
     {
-      name: "Blenman The God",
+      name: "Destroyer of Worlds",
       experience: "5 years",
       // imageNum: 3,
     },
@@ -68,6 +68,7 @@ const Teachers: React.FC<Props> = ({}) => {
           individuals, not a mass of kids. With numerous years of experience,
           they know that teaching is a continous experience
         </SectText>
+        <br />
         <ImgCard
           name={imgCardObj[imbObjInd].name}
           experience={imgCardObj[imbObjInd].experience}
