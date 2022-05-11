@@ -15,9 +15,9 @@ const NavLink: React.FC<Props> = ({ href, children, currPath }) => {
         className={
           `${
             isLinkSelected
-              ? "font-semibold text-text-dark border-b-2 border-b-primary"
+              ? "font-semibold text-text-dark  border-b-primary"
               : "text-text-grey font-medium"
-          }` + " text-link"
+          }` + " text-link lg:text-lg-link border-b-2 hover:border-b-primary"
         }
       >
         {children}
