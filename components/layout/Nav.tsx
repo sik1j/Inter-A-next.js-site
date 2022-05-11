@@ -40,7 +40,7 @@ const Nav: React.FC<Props> = ({}) => {
         </ul>
         <div className="flex-[1] flex flex-col justify-end md:flex-row">
           <Button href="/apply" filled plus>
-            Get a Quote
+            Apply
           </Button>
         </div>
       </div>
