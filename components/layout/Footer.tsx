@@ -11,11 +11,11 @@ const Footer: React.FC<Props> = ({}) => {
       <div className="flex gap-[7.5vw]">
         <div className="flex flex-col gap-5 flex-1 ">
           <div className="text-primary font-semibold text-logo-ftr">
-            DigitUX
+            Inter-A
           </div>
           <div className="text-ftr text-text-dark leading-6">
-            DigitUx is a Digital agencay that create User centred Product that
-            help her client to evolve
+            Inter-A is a highschool program that provides an education for youth
+            that will lead the future
           </div>
         </div>
         <div className="flex flex-1 flex-col gap-3">
