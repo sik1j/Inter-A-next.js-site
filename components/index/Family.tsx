@@ -41,7 +41,7 @@ const Family: React.FC<Props> = ({}) => {
         </SectText>
         <Button
           href="/apply"
-          className="mt-10 w-4/5 mx-auto flex justify-center"
+          className="mt-10 w-fit mx-auto flex justify-center"
           filled
           plus
         >
