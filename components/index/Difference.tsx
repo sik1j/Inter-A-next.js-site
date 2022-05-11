@@ -36,8 +36,10 @@ const Difference: React.FC<Props> = ({}) => {
           We offer a variaty of different programs created to help enhance
           learning and success
         </SectHeading2>
-        {cardsArr.map((cardsInfo: { title: string; info: string }) => {
-          return <Card title={cardsInfo.title} info={cardsInfo.info} />;
+        {cardsArr.map((cardsInfo: { title: string; info: string }, ind) => {
+          return (
+            <Card key={ind} title={cardsInfo.title} info={cardsInfo.info} />
+          );
         })}
       </div>
     </Sect>
