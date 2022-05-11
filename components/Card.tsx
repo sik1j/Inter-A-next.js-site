@@ -10,7 +10,7 @@ const Card: React.FC<Props> = ({ title, info }) => {
   return (
     <div className="flex flex-col justify-between space-y-3">
       <div className="font-bold text-sect2-heading text-primary">{title}</div>
-      <div className="text-text-grey">{info}</div>
+      <div className="text-text-grey max-w-prose">{info}</div>
       <Button href="/" className="w-fit" chevron>
         Learn More
       </Button>
