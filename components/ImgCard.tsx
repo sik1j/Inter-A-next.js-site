@@ -21,7 +21,13 @@ const ImgCard: React.FC<Props> = ({
   return (
     <div className=" relative">
       <div className="flex justify-center -z-10">
-        <Image src={imageUrl} height={350} width={350} objectFit="cover" />
+        <Image
+          src={imageUrl}
+          height={350}
+          width={350}
+          objectFit="cover"
+          className="rounded-md"
+        />
       </div>
       <div className="space-y-3 flex flex-col items-center mt-3">
         <div className="font-bold text-md ">{name}</div>
