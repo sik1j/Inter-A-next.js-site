@@ -1,14 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Nav from "../components/layout/Nav";
-import Hero from "../components/index/Hero";
-import Operation from "../components/index/Operation";
-import Ideals from "../components/index/Ideals";
 import Difference from "../components/index/Difference";
 import Family from "../components/index/Family";
+import Hero from "../components/index/Hero";
+import Ideals from "../components/index/Ideals";
+import Operation from "../components/index/Operation";
 import Teachers from "../components/index/Teachers";
-import Testimonial from "../components/index/Testimonial";
-import Footer from "../components/layout/Footer";
+import Layout from "../components/layout/Layout";
 
 const Home: NextPage = () => {
   return (
@@ -16,17 +14,17 @@ const Home: NextPage = () => {
       <Head>
         <title>Inter-A | Home</title>
       </Head>
-      <Nav />
-      <div className="flex flex-col gap-y-sect sm:bg-emerald-400">
-        <Hero />
-        <Operation />
-        <Ideals />
-        <Difference />
-        <Family />
-        <Teachers />
-        {/* <Testimonial /> */}
-        <Footer />
-      </div>
+      <Layout>
+        <div className="flex flex-col gap-y-sect md:mt-28 lg:gap-y-lg-sect">
+          <Hero />
+          <Operation />
+          <Ideals />
+          <Difference />
+          <Family />
+          <Teachers />
+          {/* <Testimonial /> */}
+        </div>
+      </Layout>
     </div>
   );
 };
