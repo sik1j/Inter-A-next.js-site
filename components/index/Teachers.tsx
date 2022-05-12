@@ -57,25 +57,29 @@ const Teachers: React.FC<Props> = ({}) => {
   let imbObjInd = Math.abs(imageNum);
   return (
     <Sect>
-      <SectHeading>The Teachers Behind Inter-A</SectHeading>
-      <SectHeading2>
-        A team of passionate educators helping students learn as individuals
-      </SectHeading2>
-      <br />
-      <div className="space-y-4">
-        <SectText>
-          Our team of heartfelt teachers understand that students learn best as
-          individuals, not a mass of kids. With numerous years of experience,
-          they know that teaching is a continous experience
-        </SectText>
-        <br />
-        <ImgCard
-          name={imgCardObj[imbObjInd].name}
-          experience={imgCardObj[imbObjInd].experience}
-          setNextImage={setNextImage}
-          setPrevImage={setPrevImage}
-          imageUrl={`/imgs/${imbObjInd}.jpg`}
-        />
+      <div className="lg:flex">
+        <div className="lg:flex-1">
+          <SectHeading className="">The Teachers Behind Inter-A</SectHeading>
+          <SectHeading2 className="">
+            A team of passionate educators helping students learn as individuals
+          </SectHeading2>
+          <br />
+          <SectText>
+            Our team of heartfelt teachers understand that students learn best
+            as individuals, not a mass of kids. With numerous years of
+            experience, they know that teaching is a continous experience
+          </SectText>
+        </div>
+        <div className="space-y-4 lg:flex-1 lg:space-y-0">
+          <br className="lg:hidden" />
+          <ImgCard
+            name={imgCardObj[imbObjInd].name}
+            experience={imgCardObj[imbObjInd].experience}
+            setNextImage={setNextImage}
+            setPrevImage={setPrevImage}
+            imageUrl={`/imgs/${imbObjInd}.jpg`}
+          />
+        </div>
       </div>
     </Sect>
   );

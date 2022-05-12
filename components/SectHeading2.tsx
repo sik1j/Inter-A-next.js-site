@@ -8,7 +8,7 @@ interface Props {
 const SectHeading2: React.FC<Props> = ({ children, className }) => {
   return (
     <div
-      className={`text-text-dark font-bold text-sect2-heading ${className} leading-8`}
+      className={`text-text-dark font-bold text-sect2-heading ${className} leading-8 lg:text-lg-sect2-heading lg:leading-[3.125rem]`}
     >
       {children}
     </div>

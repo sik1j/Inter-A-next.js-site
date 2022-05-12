@@ -19,7 +19,7 @@ const ImgCard: React.FC<Props> = ({
   setPrevImage,
 }) => {
   return (
-    <div className=" relative">
+    <div className="relative  w-fit ml-auto">
       <div className="flex justify-center -z-10">
         <Image
           src={imageUrl}
@@ -29,16 +29,16 @@ const ImgCard: React.FC<Props> = ({
           className="rounded-md"
         />
       </div>
-      <div className="space-y-3 flex flex-col items-center mt-3">
+      <div className="space-y-3 flex flex-col items-center mt-3 lg:items-start">
         <div className="font-bold text-md ">{name}</div>
         <div className="text-text-gray ">{experience + " of experience"}</div>
-        <div className="flex gap-14 justify-center pt-6">
+        <div className="flex gap-14 justify-center pt-6 w-full  lg:justify-center">
           <ArrowCircleLeftIcon
-            className="w-16 text-primary stroke-1"
+            className="w-16 text-primary stroke-1 cursor-pointer select-none"
             onClick={() => setPrevImage()}
           />
           <ArrowCircleRightIcon
-            className="w-16 text-primary stroke-1"
+            className="w-16 text-primary stroke-1 cursor-pointer select-none"
             onClick={() => setNextImage()}
           />
         </div>
