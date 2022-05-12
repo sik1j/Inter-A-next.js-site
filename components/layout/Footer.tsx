@@ -16,7 +16,7 @@ const Footer: React.FC<Props> = ({}) => {
               <a>Inter-A</a>
             </Link>
           </div>
-          <div className="text-ftr text-text-dark leading-6">
+          <div className="text-ftr text-text-dark leading-6 lg:w-3/4">
             Inter-A is a highschool program that provides an education for youth
             that will lead the future
           </div>
