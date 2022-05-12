@@ -45,7 +45,11 @@ const Button: React.FC<Props> = ({
     <Link href={href}>
       <a
         className={
-          `${filled ? "bg-secondary text-white" : "bg-white text-secondary"}` +
+          `${
+            filled
+              ? "bg-secondary text-white hover:bg-white hover:text-secondary"
+              : "bg-white text-secondary hover:bg-secondary hover:text-white transition-colors"
+          }` +
           " text-link font-semibold py-4 px-6 rounded-md border-2 border-secondary group " +
           className
         }
