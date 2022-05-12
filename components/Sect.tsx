@@ -6,11 +6,7 @@ interface Props {
 }
 
 const Sect: React.FC<Props> = ({ children, className }) => {
-  return (
-    <section className={`px-[5vw] py-2 relative ${className}`}>
-      {children}
-    </section>
-  );
+  return <section className={` container  ${className} `}>{children}</section>;
 };
 
 export default Sect;
