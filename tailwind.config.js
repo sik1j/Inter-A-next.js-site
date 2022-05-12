@@ -35,7 +35,17 @@ module.exports = {
         sect: "7.5rem",
         "lg-sect": "10rem",
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
