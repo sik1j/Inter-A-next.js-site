@@ -23,7 +23,7 @@ const Operation: React.FC<Props> = ({}) => {
           </SectText>
         </div>
         <div className="font-bold text-primary text-6xl text-center leading-[6rem] lg:col-span-4 lg:col-end-13 lg:absolute lg:right-0  lg:top-0 lg:bottom-8 lg:flex lg:items-center lg:leading-[8.5rem]">
-          "A School <br /> Within <br className="lg:hidden" /> a School"
+          {'"A School'} <br /> Within <br className="lg:hidden" /> {'a School"'}
         </div>
         <div className="col-span-7">
           <SectText>

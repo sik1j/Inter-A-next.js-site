@@ -14,9 +14,11 @@ const Hero: React.FC<Props> = ({}) => {
       <div className="lg:flex ">
         <div className="flex-1">
           <SectHeading className="font-bold">
-            Inter-A: Tomorrow's Leaders Today
+            {"Inter-A: Tomorrow's Leaders Today"}
           </SectHeading>
-          <HeroHeading>Creating Future Leaders In Today's World</HeroHeading>
+          <HeroHeading>
+            {"Creating Future Leaders In Today's World"}
+          </HeroHeading>
           <SectText>
             A high school program for students to receive an education that
             challenges them to Learn, Lead, and Engage.

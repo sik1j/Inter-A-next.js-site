@@ -7,6 +7,7 @@ interface Props {
   name: string;
   experience: string;
   imageUrl: string;
+  alt?: string;
   setPrevImage: () => void;
   setNextImage: () => void;
 }
@@ -15,6 +16,7 @@ const ImgCard: React.FC<Props> = ({
   name,
   experience,
   imageUrl,
+  alt,
   setNextImage,
   setPrevImage,
 }) => {
@@ -27,6 +29,7 @@ const ImgCard: React.FC<Props> = ({
           width={350}
           objectFit="cover"
           className="rounded-md"
+          alt={alt}
         />
       </div>
       <div className="space-y-3 flex flex-col items-center mt-3 lg:items-start">

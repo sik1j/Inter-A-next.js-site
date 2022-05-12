@@ -34,7 +34,11 @@ const Footer: React.FC<Props> = ({}) => {
         </div>
       </div>
       <div className="hidden sm:flex mt-16 justify-between text-primary ">
-        <a href="https://www.facebook.com/social.intera/" target={"_blank"}>
+        <a
+          href="https://www.facebook.com/social.intera/"
+          rel="noreferrer"
+          target={"_blank"}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -47,6 +51,7 @@ const Footer: React.FC<Props> = ({}) => {
         </a>
         <a
           href="https://www.instagram.com/social_intera/?hl=en"
+          rel="noreferrer"
           target={"_blank"}
         >
           <svg
@@ -61,6 +66,7 @@ const Footer: React.FC<Props> = ({}) => {
         </a>
         <a
           href="https://legacy.surreyschools.ca/schools/queene/Pages/default.aspx"
+          rel="noreferrer"
           target={"_blank"}
         >
           <svg
@@ -76,7 +82,11 @@ const Footer: React.FC<Props> = ({}) => {
             Queen Elizabeth <br /> Secondary
           </div>
         </a>
-        <a href="https://www.surreyschools.ca/" target={"_blank"}>
+        <a
+          href="https://www.surreyschools.ca/"
+          rel="noreferrer"
+          target={"_blank"}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"

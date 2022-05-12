@@ -37,10 +37,9 @@ const Family: React.FC<Props> = ({}) => {
             responsibilities.
           </SectText>
           <SectText className="col-span-6">
-            It is a place you can belong and a place where you can grow your
-            compassion and empathy. It is also a place where you can be
-            yourself. Families celebrate each other's successes. Consider
-            joining our family.
+            {
+              "It is a place you can belong and a place where you can grow your compassion and empathy. It is also a place where you can be yourself. Families celebrate each other's successes. Consider joining our family."
+            }
           </SectText>
           <Button
             href="/apply"
