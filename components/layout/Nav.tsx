@@ -13,7 +13,7 @@ const Nav: React.FC<Props> = ({}) => {
   const currPath = router.pathname;
 
   return (
-    <div className=" flex justify-between overflow-x-hidden  py-2 fixed top-0 left-0 right-0 bg-white z-10 container">
+    <div className=" flex justify-between overflow-x-hidden pt-2 fixed top-0 left-0 right-0 bg-white z-10 container">
       <div className="text-primary text-logo-nav font-semibold  md:flex-1 md:flex md:items-center lg:text-lg-logo-nav">
         <Link href={"/"}>
           <a>Inter-A</a>
