@@ -15,7 +15,7 @@ const Nav: React.FC<Props> = ({}) => {
   return (
     <div className=" flex justify-between overflow-x-hidden pt-2 fixed top-0 left-0 right-0 bg-white z-10 container">
       <div className="text-primary text-logo-nav font-semibold  md:flex-1 md:flex md:items-center lg:text-lg-logo-nav">
-        <Link href={"/"}>
+        <Link href={"/home"}>
           <a>Inter-A</a>
         </Link>
       </div>
@@ -27,7 +27,7 @@ const Nav: React.FC<Props> = ({}) => {
       >
         <ul className="flex-[1] flex flex-col justify-between items-center md:flex-row ">
           <li>
-            <NavLink href="/" currPath={currPath}>
+            <NavLink href="/home" currPath={currPath}>
               Home
             </NavLink>
           </li>
